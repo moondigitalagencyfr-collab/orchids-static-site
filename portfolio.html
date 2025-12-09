@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - En Maintenance | Moon Digital Agency</title>
+  <meta name="description" content="Notre portfolio est en cours de mise à jour. De nouveaux projets arrivent bientôt !">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .maintenance-section {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .maintenance-icon {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .maintenance-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1.5rem;
+    }
+    .maintenance-text {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+    .maintenance-card {
+      padding: 4rem 3rem;
+      border-radius: 24px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 60%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 4px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .maintenance-features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .maintenance-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .maintenance-feature span {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Moon<span>Digital</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle">Services</button>
+            <ul class="dropdown">
+              <li><a href="services/website-design.html"><span class="icon blue">🌐</span>Création de Sites Web</a></li>
+              <li><a href="services/photo-video.html"><span class="icon purple">📷</span>Studio Photo & Vidéo</a></li>
+              <li><a href="services/digital-marketing.html"><span class="icon cyan">📈</span>Marketing Digital</a></li>
+              <li><a href="services/ecommerce.html"><span class="icon orange">🛒</span>Solutions E-commerce</a></li>
+              <li><a href="services/editing.html"><span class="icon pink">✨</span>Montage & Retouche</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="btn-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="grid-pattern"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">Portfolio</span>
+          <h1 class="section-title">Notre <span class="gradient-text">Portfolio</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintenance Section -->
+    <section class="maintenance-section section">
+      <div class="container">
+        <div class="maintenance-card glass-card reveal">
+          <div class="maintenance-icon">🚧</div>
+          <h2 class="maintenance-title">Page en <span class="gradient-text">Maintenance</span></h2>
+          <p class="maintenance-text">
+            Nous mettons à jour notre portfolio avec nos dernières réalisations. 
+            De nouveaux projets passionnants arrivent très bientôt !
+          </p>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="maintenance-features">
+            <div class="maintenance-feature">
+              <span>🎨</span> Nouveaux designs
+            </div>
+            <div class="maintenance-feature">
+              <span>📸</span> Photos récentes
+            </div>
+            <div class="maintenance-feature">
+              <span>🎬</span> Vidéos projets
+            </div>
+          </div>
+          <div style="margin-top: 3rem;">
+            <a href="contact.html" class="btn btn-primary">Contactez-nous en attendant →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Moon<span>Digital</span></div>
+          <p>Agence digitale premium en France. Web, Photo, Vidéo, Marketing & E-commerce.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/website-design.html">Création Web</a></li>
+            <li><a href="services/photo-video.html">Photo & Vidéo</a></li>
+            <li><a href="services/digital-marketing.html">Marketing Digital</a></li>
+            <li><a href="services/ecommerce.html">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Agence</h4>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:moondigitalagencyfr@gmail.com">moondigitalagencyfr@gmail.com</a></li>
+            <li><a href="tel:+33652689614">+33 6 52 68 96 14</a></li>
+            <li>France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Moon Digital Agency. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

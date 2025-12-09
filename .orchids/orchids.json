@@ -1,0 +1,7 @@
+{
+  "projectId": "813b4137-8729-4b88-9e28-d4b86c6a1dc9",
+  "createdAt": 1765304693289,
+  "startupCommands": [
+    "cd \"C:\\Users\\pc\\Downloads\\Moon-Digital_-Creative-Studio-Website-codebase (2)\\public\\static-site\"; python -m http.server 8000"
+  ]
+}

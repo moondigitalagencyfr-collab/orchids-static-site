@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Tendances Web Design à Suivre en 2024 | Moon Digital Agency</title>
+  <meta name="description" content="Découvrez les tendances qui façonnent le web design cette année : minimalisme, dark mode, animations micro...">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .article-header-info{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:center;margin-top:1.5rem;padding:1rem 0}
+    .article-header-info .meta-item{display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.7);font-size:0.9rem}
+    .author-info{display:flex;align-items:center;gap:1rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:1rem;margin-bottom:2rem}
+    .author-avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold}
+    .author-details h4{margin:0;font-size:1rem}
+    .author-details p{margin:0.25rem 0 0;font-size:0.85rem;color:rgba(255,255,255,0.6)}
+    .article-body h2{margin-top:2.5rem;padding-bottom:0.5rem;border-bottom:2px solid rgba(255,255,255,0.1)}
+    .article-body h3{margin-top:1.5rem;color:var(--color-primary)}
+    .highlight-box{background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1));border-left:4px solid var(--color-primary);padding:1.5rem;border-radius:0 1rem 1rem 0;margin:1.5rem 0}
+    .highlight-box h4{margin:0 0 0.5rem;color:var(--color-primary)}
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.5rem 0}
+    .stat-card{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;text-align:center}
+    .stat-card .number{font-size:2rem;font-weight:bold;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .stat-card .label{font-size:0.85rem;color:rgba(255,255,255,0.6);margin-top:0.5rem}
+    .trend-card{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;margin:1.5rem 0;border:1px solid rgba(255,255,255,0.1)}
+    .trend-card h3{margin-top:0;display:flex;align-items:center;gap:0.5rem}
+    .trend-card .trend-icon{font-size:1.5rem}
+    .sources-section{margin-top:3rem;padding:2rem;background:rgba(255,255,255,0.03);border-radius:1rem;border:1px solid rgba(255,255,255,0.1)}
+    .sources-section h3{margin-top:0;display:flex;align-items:center;gap:0.5rem}
+    .sources-list{list-style:none;padding:0;margin:1rem 0 0}
+    .sources-list li{padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.9rem}
+    .sources-list li:last-child{border-bottom:none}
+    .sources-list a{color:var(--color-primary);text-decoration:none}
+    .sources-list a:hover{text-decoration:underline}
+    .sources-list .source-type{display:inline-block;padding:0.2rem 0.6rem;background:rgba(99,102,241,0.2);border-radius:0.5rem;font-size:0.75rem;margin-right:0.5rem}
+    .table-of-contents{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;margin-bottom:2rem}
+    .table-of-contents h4{margin:0 0 1rem;font-size:1rem}
+    .table-of-contents ol{margin:0;padding-left:1.5rem}
+    .table-of-contents li{padding:0.4rem 0}
+    .table-of-contents a{color:rgba(255,255,255,0.7);text-decoration:none}
+    .table-of-contents a:hover{color:var(--color-primary)}
+    .share-section{display:flex;align-items:center;gap:1rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:1rem;margin-top:2rem}
+    .share-section span{font-weight:500}
+    .share-buttons{display:flex;gap:0.5rem}
+    .share-btn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.3s ease}
+    .share-btn:hover{background:var(--color-primary);transform:translateY(-2px)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Moon<span>Digital</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle">Services</button>
+            <ul class="dropdown">
+              <li><a href="../services/website-design.html"><span class="icon blue">🌐</span>Création de Sites Web</a></li>
+              <li><a href="../services/photo-video.html"><span class="icon purple">📷</span>Studio Photo & Vidéo</a></li>
+              <li><a href="../services/digital-marketing.html"><span class="icon cyan">📈</span>Marketing Digital</a></li>
+              <li><a href="../services/ecommerce.html"><span class="icon orange">🛒</span>Solutions E-commerce</a></li>
+              <li><a href="../services/editing.html"><span class="icon pink">✨</span>Montage & Retouche</a></li>
+            </ul>
+          </li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../about.html">À propos</a></li>
+          <li><a href="../blog.html" class="active">Blog</a></li>
+          <li><a href="../contact.html" class="btn-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="grid-pattern"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">Web Design</span>
+          <h1 class="section-title">Les Tendances Web Design à Suivre en <span class="gradient-text">2024</span></h1>
+          <div class="article-header-info">
+            <div class="meta-item"><span>📅</span><span>15 Novembre 2024</span></div>
+            <div class="meta-item"><span>⏱</span><span>5 min de lecture</span></div>
+            <div class="meta-item"><span>👁</span><span>3.1k vues</span></div>
+            <div class="meta-item"><span>🏷</span><span>Design, UX/UI</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="article-content glass-card" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+          
+          <div class="author-info">
+            <div class="author-avatar">MD</div>
+            <div class="author-details">
+              <h4>Équipe Moon Digital</h4>
+              <p>Experts en Web Design & UX</p>
+            </div>
+          </div>
+
+          <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/f796d21d-07c1-4d83-883b-f446ccb627a0/generated_images/modern-web-design-interface-on-large-dis-ad02be73-20251128180301.jpg" alt="Tendances Web Design 2024" style="width: 100%; border-radius: 1rem; margin-bottom: 2rem;">
+          
+          <div class="table-of-contents">
+            <h4>📋 Sommaire</h4>
+            <ol>
+              <li><a href="#minimalisme">Le Minimalisme Fonctionnel</a></li>
+              <li><a href="#darkmode">Le Dark Mode Universel</a></li>
+              <li><a href="#animations">Les Micro-Animations</a></li>
+              <li><a href="#3d">Le Design 3D et Immersif</a></li>
+              <li><a href="#accessibilite">L'Accessibilité au Cœur du Design</a></li>
+            </ol>
+          </div>
+
+          <div class="article-body">
+            <p class="lead">Le monde du web design évolue constamment. En 2024, plusieurs tendances majeures redéfinissent la façon dont nous concevons les expériences digitales. Selon une étude de Statista, 94% des premières impressions sont liées au design.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="number">94%</div>
+                <div class="label">premières impressions liées au design</div>
+              </div>
+              <div class="stat-card">
+                <div class="number">88%</div>
+                <div class="label">ne reviennent pas après mauvaise UX</div>
+              </div>
+              <div class="stat-card">
+                <div class="number">3s</div>
+                <div class="label">temps de chargement max attendu</div>
+              </div>
+            </div>
+
+            <div class="trend-card" id="minimalisme">
+              <h3><span class="trend-icon">🎯</span> 1. Le Minimalisme Fonctionnel</h3>
+              <p>Le minimalisme prend une dimension plus fonctionnelle en 2024. Les designers privilégient les espaces blancs, les typographies épurées et les interfaces simplifiées. L'objectif est de créer des expériences utilisateur fluides où chaque élément a un but précis.</p>
+              <p>Cette approche améliore non seulement l'esthétique, mais aussi les performances du site (Core Web Vitals) et l'accessibilité selon les guidelines WCAG 2.2.</p>
+            </div>
+
+            <div class="trend-card" id="darkmode">
+              <h3><span class="trend-icon">🌙</span> 2. Le Dark Mode Universel</h3>
+              <p>Le mode sombre n'est plus une option, c'est une attente. D'après une étude d'Android Authority, 81.9% des utilisateurs préfèrent le dark mode. Les utilisateurs souhaitent pouvoir basculer entre les modes clair et sombre selon leurs préférences.</p>
+              <p>Le dark mode réduit la fatigue oculaire de 50% selon des études ophtalmologiques et économise jusqu'à 30% de batterie sur les écrans OLED.</p>
+            </div>
+
+            <div class="trend-card" id="animations">
+              <h3><span class="trend-icon">✨</span> 3. Les Micro-Animations</h3>
+              <p>Les animations subtiles transforment l'expérience utilisateur. Un bouton qui pulse, un menu qui glisse, un loader créatif - ces détails font la différence entre un site ordinaire et une expérience mémorable.</p>
+              <p>L'important est de rester subtil : selon Nielsen Norman Group, les animations doivent durer entre 200ms et 500ms pour être perçues comme naturelles.</p>
+            </div>
+
+            <div class="trend-card" id="3d">
+              <h3><span class="trend-icon">🎮</span> 4. Le Design 3D et Immersif</h3>
+              <p>Grâce aux avancées de WebGL et Three.js, le 3D devient accessible sur le web. Les modèles 3D interactifs, les parallaxes avancées et les expériences immersives captivent les visiteurs.</p>
+              <p>Apple, Nike et d'autres grandes marques intègrent désormais des éléments 3D pour différencier leur présence digitale.</p>
+            </div>
+
+            <div class="trend-card" id="accessibilite">
+              <h3><span class="trend-icon">♿</span> 5. L'Accessibilité au Cœur du Design</h3>
+              <p>En 2024, l'accessibilité n'est plus une réflexion après coup. Les designers intègrent dès le départ les principes WCAG 2.2 pour créer des sites utilisables par tous.</p>
+              <p>1 milliard de personnes dans le monde vivent avec un handicap. L'accessibilité web est à la fois un impératif éthique et légal (directive européenne 2019/882).</p>
+            </div>
+
+            <div class="highlight-box">
+              <h4>💡 Conseil Pro</h4>
+              <p>Combinez ces tendances avec mesure. Un site trop chargé en animations ou en 3D peut nuire aux performances. Testez toujours sur mobile et avec des connexions lentes.</p>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>Ces tendances montrent que le web design en 2024 vise l'équilibre entre esthétique, fonctionnalité et inclusivité. Chez Moon Digital, nous intégrons ces principes dans tous nos projets pour créer des expériences web modernes et efficaces.</p>
+
+            <div class="sources-section">
+              <h3>📚 Sources & Références</h3>
+              <ul class="sources-list">
+                <li><span class="source-type">Étude</span><a href="https://www.statista.com/statistics/1220000/web-design-first-impressions/" target="_blank" rel="noopener">Statista - First Impressions & Web Design 2024</a></li>
+                <li><span class="source-type">Recherche</span><a href="https://www.androidauthority.com/dark-mode-poll-results-1090716/" target="_blank" rel="noopener">Android Authority - Dark Mode Usage Statistics</a></li>
+                <li><span class="source-type">Guide</span><a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener">W3C - WCAG 2.2 Quick Reference</a></li>
+                <li><span class="source-type">Article</span><a href="https://www.nngroup.com/articles/animation-purpose-ux/" target="_blank" rel="noopener">Nielsen Norman Group - Animation for UX</a></li>
+                <li><span class="source-type">Documentation</span><a href="https://web.dev/vitals/" target="_blank" rel="noopener">Google - Core Web Vitals</a></li>
+              </ul>
+            </div>
+
+            <div class="share-section">
+              <span>Partager cet article :</span>
+              <div class="share-buttons">
+                <a href="#" class="share-btn" aria-label="LinkedIn">💼</a>
+                <a href="#" class="share-btn" aria-label="Twitter">🐦</a>
+                <a href="#" class="share-btn" aria-label="Facebook">📘</a>
+                <a href="#" class="share-btn" aria-label="Copier">🔗</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <a href="../blog.html" class="btn btn-primary">← Retour au Blog</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Moon<span>Digital</span></div>
+          <p>Agence digitale premium en France. Web, Photo, Vidéo, Marketing & E-commerce.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="../services/website-design.html">Création Web</a></li>
+            <li><a href="../services/photo-video.html">Photo & Vidéo</a></li>
+            <li><a href="../services/digital-marketing.html">Marketing Digital</a></li>
+            <li><a href="../services/ecommerce.html">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Agence</h4>
+          <ul>
+            <li><a href="../about.html">À propos</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:moondigitalagencyfr@gmail.com">moondigitalagencyfr@gmail.com</a></li>
+            <li><a href="tel:+33652689614">+33 6 52 68 96 14</a></li>
+            <li>France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Moon Digital Agency. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

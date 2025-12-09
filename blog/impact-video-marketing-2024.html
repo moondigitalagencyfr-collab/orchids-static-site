@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Impact du Video Marketing en 2024 | Moon Digital Agency</title>
+  <meta name="description" content="Pourquoi la vidéo est devenue incontournable dans votre stratégie marketing digitale.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .article-header-info{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:center;margin-top:1.5rem;padding:1rem 0}
+    .article-header-info .meta-item{display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.7);font-size:0.9rem}
+    .author-info{display:flex;align-items:center;gap:1rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:1rem;margin-bottom:2rem}
+    .author-avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold}
+    .author-details h4{margin:0;font-size:1rem}
+    .author-details p{margin:0.25rem 0 0;font-size:0.85rem;color:rgba(255,255,255,0.6)}
+    .article-body h2{margin-top:2.5rem;padding-bottom:0.5rem;border-bottom:2px solid rgba(255,255,255,0.1)}
+    .article-body h3{margin-top:1.5rem;color:var(--color-primary)}
+    .highlight-box{background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1));border-left:4px solid var(--color-primary);padding:1.5rem;border-radius:0 1rem 1rem 0;margin:1.5rem 0}
+    .highlight-box h4{margin:0 0 0.5rem;color:var(--color-primary)}
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.5rem 0}
+    .stat-card{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;text-align:center}
+    .stat-card .number{font-size:2rem;font-weight:bold;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .stat-card .label{font-size:0.85rem;color:rgba(255,255,255,0.6);margin-top:0.5rem}
+    .checklist{list-style:none;padding:0;margin:1.5rem 0}
+    .checklist li{padding:0.75rem 0;padding-left:2rem;position:relative;border-bottom:1px solid rgba(255,255,255,0.05)}
+    .checklist li::before{content:"✓";position:absolute;left:0;color:#22c55e;font-weight:bold}
+    .format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1.5rem 0}
+    .format-card{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;text-align:center;border:1px solid rgba(255,255,255,0.1)}
+    .format-card .icon{font-size:2.5rem;margin-bottom:0.5rem}
+    .format-card h4{margin:0.5rem 0;font-size:1rem}
+    .format-card p{font-size:0.8rem;color:rgba(255,255,255,0.6);margin:0}
+    .sources-section{margin-top:3rem;padding:2rem;background:rgba(255,255,255,0.03);border-radius:1rem;border:1px solid rgba(255,255,255,0.1)}
+    .sources-section h3{margin-top:0;display:flex;align-items:center;gap:0.5rem}
+    .sources-list{list-style:none;padding:0;margin:1rem 0 0}
+    .sources-list li{padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.9rem}
+    .sources-list li:last-child{border-bottom:none}
+    .sources-list a{color:var(--color-primary);text-decoration:none}
+    .sources-list a:hover{text-decoration:underline}
+    .sources-list .source-type{display:inline-block;padding:0.2rem 0.6rem;background:rgba(99,102,241,0.2);border-radius:0.5rem;font-size:0.75rem;margin-right:0.5rem}
+    .table-of-contents{background:rgba(255,255,255,0.05);padding:1.5rem;border-radius:1rem;margin-bottom:2rem}
+    .table-of-contents h4{margin:0 0 1rem;font-size:1rem}
+    .table-of-contents ol{margin:0;padding-left:1.5rem}
+    .table-of-contents li{padding:0.4rem 0}
+    .table-of-contents a{color:rgba(255,255,255,0.7);text-decoration:none}
+    .table-of-contents a:hover{color:var(--color-primary)}
+    .share-section{display:flex;align-items:center;gap:1rem;padding:1.5rem;background:rgba(255,255,255,0.05);border-radius:1rem;margin-top:2rem}
+    .share-section span{font-weight:500}
+    .share-buttons{display:flex;gap:0.5rem}
+    .share-btn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.3s ease}
+    .share-btn:hover{background:var(--color-primary);transform:translateY(-2px)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Moon<span>Digital</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle">Services</button>
+            <ul class="dropdown">
+              <li><a href="../services/website-design.html"><span class="icon blue">🌐</span>Création de Sites Web</a></li>
+              <li><a href="../services/photo-video.html"><span class="icon purple">📷</span>Studio Photo & Vidéo</a></li>
+              <li><a href="../services/digital-marketing.html"><span class="icon cyan">📈</span>Marketing Digital</a></li>
+              <li><a href="../services/ecommerce.html"><span class="icon orange">🛒</span>Solutions E-commerce</a></li>
+              <li><a href="../services/editing.html"><span class="icon pink">✨</span>Montage & Retouche</a></li>
+            </ul>
+          </li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../about.html">À propos</a></li>
+          <li><a href="../blog.html" class="active">Blog</a></li>
+          <li><a href="../contact.html" class="btn-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="grid-pattern"></div>
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="eyebrow">Marketing Digital</span>
+          <h1 class="section-title">L'Impact du Video Marketing en <span class="gradient-text">2024</span></h1>
+          <div class="article-header-info">
+            <div class="meta-item"><span>📅</span><span>28 Octobre 2024</span></div>
+            <div class="meta-item"><span>⏱</span><span>5 min de lecture</span></div>
+            <div class="meta-item"><span>👁</span><span>2.1k vues</span></div>
+            <div class="meta-item"><span>🏷</span><span>Vidéo, Marketing</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="article-content glass-card" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+          
+          <div class="author-info">
+            <div class="author-avatar">MD</div>
+            <div class="author-details">
+              <h4>Équipe Moon Digital</h4>
+              <p>Experts en Production Vidéo & Marketing</p>
+            </div>
+          </div>
+
+          <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/f796d21d-07c1-4d83-883b-f446ccb627a0/generated_images/professional-video-editing-workstation-m-6b0042f7-20251128180302.jpg" alt="Video Marketing" style="width: 100%; border-radius: 1rem; margin-bottom: 2rem;">
+          
+          <div class="table-of-contents">
+            <h4>📋 Sommaire</h4>
+            <ol>
+              <li><a href="#chiffres">Les chiffres qui parlent</a></li>
+              <li><a href="#formats">Les formats vidéo tendances</a></li>
+              <li><a href="#plateformes">Plateformes et stratégies</a></li>
+              <li><a href="#conseils">Conseils pour débuter</a></li>
+            </ol>
+          </div>
+
+          <div class="article-body">
+            <p class="lead">La vidéo représente désormais 82% du trafic internet mondial selon Cisco. En 2024, ne pas intégrer la vidéo dans sa stratégie marketing, c'est passer à côté d'opportunités massives de croissance.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="number">82%</div>
+                <div class="label">du trafic internet est vidéo</div>
+              </div>
+              <div class="stat-card">
+                <div class="number">88%</div>
+                <div class="label">des marketeurs satisfaits ROI vidéo</div>
+              </div>
+              <div class="stat-card">
+                <div class="number">+86%</div>
+                <div class="label">de conversions avec vidéo</div>
+              </div>
+            </div>
+
+            <h2 id="chiffres">Les Chiffres qui Parlent</h2>
+            <p>Les statistiques de Wyzowl (State of Video Marketing 2024) sont éloquentes :</p>
+            <ul class="checklist">
+              <li>91% des entreprises utilisent la vidéo comme outil marketing</li>
+              <li>88% des marketeurs rapportent un ROI positif de la vidéo</li>
+              <li>87% des marketeurs affirment que la vidéo a augmenté leur trafic</li>
+              <li>Les vidéos sur landing pages augmentent les conversions de 86%</li>
+              <li>Les utilisateurs passent 88% plus de temps sur un site avec vidéo</li>
+            </ul>
+
+            <div class="highlight-box">
+              <h4>💡 Fait marquant</h4>
+              <p>Une minute de vidéo équivaut à 1,8 million de mots en termes d'impact informationnel (Forrester Research). Le cerveau humain traite les images 60 000 fois plus vite que le texte.</p>
+            </div>
+
+            <h2 id="formats">Les Formats Vidéo Tendances</h2>
+            <p>En 2024, plusieurs formats dominent le paysage du video marketing :</p>
+
+            <div class="format-grid">
+              <div class="format-card">
+                <div class="icon">📱</div>
+                <h4>Short-form</h4>
+                <p>Reels, TikTok, Shorts. 15-60 secondes max.</p>
+              </div>
+              <div class="format-card">
+                <div class="icon">🎥</div>
+                <h4>Live Streaming</h4>
+                <p>Authenticité et interaction en temps réel.</p>
+              </div>
+              <div class="format-card">
+                <div class="icon">🎬</div>
+                <h4>Témoignages</h4>
+                <p>Social proof puissant pour convertir.</p>
+              </div>
+              <div class="format-card">
+                <div class="icon">📚</div>
+                <h4>Tutoriels</h4>
+                <p>Valeur éducative et fidélisation.</p>
+              </div>
+              <div class="format-card">
+                <div class="icon">🎭</div>
+                <h4>Behind the Scenes</h4>
+                <p>Humanise la marque et crée du lien.</p>
+              </div>
+              <div class="format-card">
+                <div class="icon">🛍️</div>
+                <h4>Shoppable Video</h4>
+                <p>Achat direct depuis la vidéo.</p>
+              </div>
+            </div>
+
+            <h2 id="plateformes">Plateformes et Stratégies</h2>
+            <p>Chaque plateforme a ses codes et son audience :</p>
+
+            <h3>YouTube</h3>
+            <p>Le 2ème moteur de recherche mondial. Idéal pour le contenu long format, les tutoriels et le SEO vidéo. ROI excellent sur le long terme.</p>
+
+            <h3>TikTok & Instagram Reels</h3>
+            <p>La portée organique y est encore exceptionnelle. Format vertical, dynamique, authentique. Cible privilégiée : Gen Z et Millennials.</p>
+
+            <h3>LinkedIn</h3>
+            <p>Sous-exploité pour la vidéo B2B. Les vidéos LinkedIn génèrent 5x plus d'engagement que les autres contenus.</p>
+
+            <h2 id="conseils">Conseils pour Débuter</h2>
+            <ul class="checklist">
+              <li>Commencez avec votre smartphone - la qualité compte moins que l'authenticité</li>
+              <li>Investissez dans un bon micro - le son est primordial</li>
+              <li>Adaptez votre contenu au format de chaque plateforme</li>
+              <li>Ajoutez des sous-titres - 85% des vidéos Facebook sont vues sans son</li>
+              <li>Créez un hook dans les 3 premières secondes</li>
+              <li>Analysez vos métriques et itérez</li>
+            </ul>
+
+            <div class="highlight-box">
+              <h4>🎯 L'équipement minimum</h4>
+              <ul style="margin: 0.5rem 0 0 1.5rem;">
+                <li><strong>Smartphone récent</strong> : iPhone 12+ ou équivalent Android</li>
+                <li><strong>Micro-cravate</strong> : Rode Wireless Go (~200€)</li>
+                <li><strong>Éclairage</strong> : Ring light ou lumière naturelle</li>
+                <li><strong>Trépied/Stabilisateur</strong> : DJI OM ou équivalent</li>
+              </ul>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>Le video marketing n'est plus optionnel en 2024. C'est un canal essentiel pour atteindre, engager et convertir votre audience. Chez Moon Digital, notre équipe de production vidéo accompagne les marques dans leur stratégie de contenu vidéo.</p>
+
+            <div class="sources-section">
+              <h3>📚 Sources & Références</h3>
+              <ul class="sources-list">
+                <li><span class="source-type">Rapport</span><a href="https://www.cisco.com/c/en/us/solutions/collateral/executive-perspectives/annual-internet-report/white-paper-c11-741490.html" target="_blank" rel="noopener">Cisco - Annual Internet Report 2024</a></li>
+                <li><span class="source-type">Étude</span><a href="https://www.wyzowl.com/video-marketing-statistics/" target="_blank" rel="noopener">Wyzowl - State of Video Marketing 2024</a></li>
+                <li><span class="source-type">Recherche</span><a href="https://www.forrester.com/research/" target="_blank" rel="noopener">Forrester Research - Video Impact Studies</a></li>
+                <li><span class="source-type">Guide</span><a href="https://blog.hubspot.com/marketing/video-marketing" target="_blank" rel="noopener">HubSpot - Ultimate Guide to Video Marketing</a></li>
+                <li><span class="source-type">Statistiques</span><a href="https://sproutsocial.com/insights/social-media-video-statistics/" target="_blank" rel="noopener">Sprout Social - Video Statistics 2024</a></li>
+              </ul>
+            </div>
+
+            <div class="share-section">
+              <span>Partager cet article :</span>
+              <div class="share-buttons">
+                <a href="#" class="share-btn" aria-label="LinkedIn">💼</a>
+                <a href="#" class="share-btn" aria-label="Twitter">🐦</a>
+                <a href="#" class="share-btn" aria-label="Facebook">📘</a>
+                <a href="#" class="share-btn" aria-label="Copier">🔗</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <a href="../blog.html" class="btn btn-primary">← Retour au Blog</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Moon<span>Digital</span></div>
+          <p>Agence digitale premium en France. Web, Photo, Vidéo, Marketing & E-commerce.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="../services/website-design.html">Création Web</a></li>
+            <li><a href="../services/photo-video.html">Photo & Vidéo</a></li>
+            <li><a href="../services/digital-marketing.html">Marketing Digital</a></li>
+            <li><a href="../services/ecommerce.html">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Agence</h4>
+          <ul>
+            <li><a href="../about.html">À propos</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:moondigitalagencyfr@gmail.com">moondigitalagencyfr@gmail.com</a></li>
+            <li><a href="tel:+33652689614">+33 6 52 68 96 14</a></li>
+            <li>France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Moon Digital Agency. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
