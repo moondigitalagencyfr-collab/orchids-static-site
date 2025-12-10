@@ -3,5 +3,7 @@
   "createdAt": 1765304693289,
   "startupCommands": [
     "cd \"C:\\Users\\pc\\Downloads\\Moon-Digital_-Creative-Studio-Website-codebase (2)\\public\\static-site\"; python -m http.server 8000"
-  ]
+  ],
+  "vercelProjectId": "prj_dinJese4LCkHP9h0MUc3Q1F1gd43",
+  "deployedWithUserToken": false
 }
