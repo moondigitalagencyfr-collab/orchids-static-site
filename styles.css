@@ -821,13 +821,15 @@ ul, ol { list-style: none; }
 .showcase-hero img {
   width: 100%;
   height: auto;
+  min-height: 300px;
+  object-fit: cover;
 }
 
 .showcase-hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
 }
 
 .showcase-overlay {
@@ -835,24 +837,43 @@ ul, ol { list-style: none; }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 1;
 }
 
 .showcase-overlay .glass-card {
-  max-width: 32rem;
-  padding: 1.5rem;
+  max-width: 100%;
+  padding: 1.25rem;
 }
 
 .showcase-overlay h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .showcase-overlay p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .showcase-overlay {
+    padding: 2rem;
+  }
+  
+  .showcase-overlay .glass-card {
+    max-width: 32rem;
+    padding: 1.5rem;
+  }
+  
+  .showcase-overlay h3 {
+    font-size: 1.25rem;
+  }
+  
+  .showcase-overlay p {
+    font-size: 0.9rem;
+  }
 }
 
 .showcase-grid {
