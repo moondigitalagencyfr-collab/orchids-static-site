@@ -102,7 +102,10 @@
           </div>
           
           <div class="contact-form glass-card reveal">
-            <form>
+            <form action="https://formspree.io/f/xpwzgvkd" method="POST" id="contact-form">
+              <input type="hidden" name="_subject" value="Nouveau message - Moon Digital Agency">
+              <input type="text" name="_gotcha" style="display:none">
+              
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="name">Nom Complet *</label>
@@ -154,6 +157,7 @@
               <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
                 Envoyer le Message →
               </button>
+              <p id="form-status" style="text-align: center; margin-top: 1rem; display: none;"></p>
             </form>
           </div>
         </div>

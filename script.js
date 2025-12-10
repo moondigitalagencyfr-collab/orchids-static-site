@@ -120,32 +120,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Contact Form (basic validation)
-  const contactForm = document.querySelector('.contact-form form');
+  // Contact Form (Formspree integration)
+  const contactForm = document.querySelector('#contact-form');
   
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
       e.preventDefault();
       
       const formData = new FormData(this);
-      const data = Object.fromEntries(formData);
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const formStatus = document.getElementById('form-status');
+      const originalBtnText = submitBtn.innerHTML;
       
-      // Basic validation
-      if (!data.name || !data.email || !data.message) {
-        alert('Veuillez remplir tous les champs obligatoires.');
-        return;
+      submitBtn.innerHTML = 'Envoi en cours...';
+      submitBtn.disabled = true;
+      
+      try {
+        const response = await fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          formStatus.style.display = 'block';
+          formStatus.style.color = '#22c55e';
+          formStatus.textContent = '✓ Merci pour votre message ! Nous vous répondrons sous 24h.';
+          this.reset();
+        } else {
+          throw new Error('Erreur serveur');
+        }
+      } catch (error) {
+        formStatus.style.display = 'block';
+        formStatus.style.color = '#ef4444';
+        formStatus.textContent = '✕ Erreur lors de l\'envoi. Veuillez réessayer ou nous contacter par email.';
       }
       
-      // Email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(data.email)) {
-        alert('Veuillez entrer une adresse email valide.');
-        return;
-      }
-      
-      // Show success message (in a real app, you'd send to server)
-      alert('Merci pour votre message ! Nous vous répondrons sous 24h.');
-      this.reset();
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.disabled = false;
     });
   }
 
