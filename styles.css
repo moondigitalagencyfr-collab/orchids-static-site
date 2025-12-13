@@ -1034,8 +1034,34 @@ ul, ol { list-style: none; }
 .page-header-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(34, 211, 238, 0.1));
   z-index: -1;
+  background: var(--bg);
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.page-header-bg::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.4) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.4) 2px, transparent 2px);
+  background-size: 60px 60px;
+  transform: perspective(600px) rotateX(60deg) translateZ(-100px);
+  transform-origin: center center;
+  animation: gridRipple 4s ease-in-out infinite;
+  mask-image: radial-gradient(ellipse 70% 40% at 50% 50%, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 40% at 50% 50%, black 20%, transparent 70%);
+  filter: blur(0.5px) drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+}
+
+.page-header-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 50%, transparent 30%, var(--bg) 80%);
+  pointer-events: none;
 }
 
 /* Portfolio Grid */
