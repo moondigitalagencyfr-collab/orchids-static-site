@@ -233,11 +233,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     card.addEventListener('mousemove', function(e) {
       const rect = this.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
       
-      this.style.setProperty('--mouse-x', `${x}%`);
-      this.style.setProperty('--mouse-y', `${y}%`);
+      this.style.setProperty('--mouse-x', `${x}px`);
+      this.style.setProperty('--mouse-y', `${y}px`);
       
       // Customize spotlight color based on card type
       if (this.classList.contains('service-card')) {
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
           this.style.setProperty('--spotlight-color', 'rgba(249, 115, 22, 0.15)');
         }
       } else {
-        this.style.setProperty('--spotlight-color', 'rgba(255, 255, 255, 0.08)');
+        this.style.setProperty('--spotlight-color', 'rgba(255, 255, 255, 0.1)');
       }
     });
   });
