@@ -224,4 +224,49 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.add('active');
     }
   });
+
+  // Spotlight Effect for Glass Cards
+  const spotlightCards = document.querySelectorAll('.glass-card');
+  
+  spotlightCards.forEach(card => {
+    card.classList.add('card-spotlight');
+    
+    card.addEventListener('mousemove', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      
+      this.style.setProperty('--mouse-x', `${x}%`);
+      this.style.setProperty('--mouse-y', `${y}%`);
+      
+      // Customize spotlight color based on card type
+      if (this.classList.contains('service-card')) {
+        if (this.querySelector('.service-icon.blue')) {
+          this.style.setProperty('--spotlight-color', 'rgba(59, 130, 246, 0.15)');
+        } else if (this.querySelector('.service-icon.purple')) {
+          this.style.setProperty('--spotlight-color', 'rgba(168, 85, 247, 0.15)');
+        } else if (this.querySelector('.service-icon.cyan')) {
+          this.style.setProperty('--spotlight-color', 'rgba(34, 211, 238, 0.15)');
+        } else if (this.querySelector('.service-icon.orange')) {
+          this.style.setProperty('--spotlight-color', 'rgba(249, 115, 22, 0.15)');
+        } else if (this.querySelector('.service-icon.pink')) {
+          this.style.setProperty('--spotlight-color', 'rgba(236, 72, 153, 0.15)');
+        } else if (this.querySelector('.service-icon.green')) {
+          this.style.setProperty('--spotlight-color', 'rgba(34, 197, 94, 0.15)');
+        }
+      } else if (this.classList.contains('benefit-card')) {
+        if (this.querySelector('.benefit-icon.cyan')) {
+          this.style.setProperty('--spotlight-color', 'rgba(34, 211, 238, 0.15)');
+        } else if (this.querySelector('.benefit-icon.purple')) {
+          this.style.setProperty('--spotlight-color', 'rgba(168, 85, 247, 0.15)');
+        } else if (this.querySelector('.benefit-icon.pink')) {
+          this.style.setProperty('--spotlight-color', 'rgba(236, 72, 153, 0.15)');
+        } else if (this.querySelector('.benefit-icon.orange')) {
+          this.style.setProperty('--spotlight-color', 'rgba(249, 115, 22, 0.15)');
+        }
+      } else {
+        this.style.setProperty('--spotlight-color', 'rgba(255, 255, 255, 0.08)');
+      }
+    });
+  });
 });
