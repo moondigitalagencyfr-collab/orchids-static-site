@@ -234,6 +234,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Services Bubble Modal
+  const servicesBtn = document.getElementById('services-btn');
+  const servicesOverlay = document.getElementById('services-overlay');
+  const servicesCloseBtn = document.getElementById('services-close-btn');
+
+  if (servicesBtn && servicesOverlay) {
+    servicesBtn.addEventListener('click', function() {
+      servicesOverlay.classList.add('active');
+    });
+  }
+
+  if (servicesCloseBtn && servicesOverlay) {
+    servicesCloseBtn.addEventListener('click', function() {
+      servicesOverlay.classList.remove('active');
+    });
+    
+    servicesOverlay.addEventListener('click', function(e) {
+      if (e.target === servicesOverlay) {
+        servicesOverlay.classList.remove('active');
+      }
+    });
+  }
+
   // Spotlight Effect for Glass Cards
   const spotlightCards = document.querySelectorAll('.glass-card');
   

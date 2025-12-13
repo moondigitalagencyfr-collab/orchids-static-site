@@ -1725,3 +1725,191 @@ ul, ol { list-style: none; }
   position: relative;
   z-index: 1;
 }
+
+/* Services Bubble Modal */
+.services-bubble-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.services-bubble-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.services-bubble {
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 15, 17, 0.98);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.services-bubble-overlay.active .services-bubble {
+  transform: scale(1) translateY(0);
+}
+
+.services-bubble-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-bubble-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--fg);
+}
+
+.services-close {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.services-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--fg);
+}
+
+.services-bubble-content {
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.service-bubble-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-bubble-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+.service-bubble-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.875rem;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.service-bubble-icon.blue {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.service-bubble-icon.purple {
+  background: rgba(168, 85, 247, 0.15);
+}
+
+.service-bubble-icon.cyan {
+  background: rgba(34, 211, 238, 0.15);
+}
+
+.service-bubble-icon.orange {
+  background: rgba(249, 115, 22, 0.15);
+}
+
+.service-bubble-icon.pink {
+  background: rgba(236, 72, 153, 0.15);
+}
+
+.service-bubble-info {
+  flex: 1;
+}
+
+.service-bubble-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: var(--fg);
+}
+
+.service-bubble-info p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.service-bubble-item svg {
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .services-bubble {
+    max-width: calc(100vw - 2rem);
+    border-radius: 1.25rem;
+  }
+  
+  .services-bubble-header {
+    padding: 1.25rem;
+  }
+  
+  .service-bubble-item {
+    padding: 0.875rem;
+  }
+  
+  .service-bubble-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .service-bubble-info h4 {
+    font-size: 0.95rem;
+  }
+  
+  .service-bubble-info p {
+    font-size: 0.8rem;
+  }
+}
