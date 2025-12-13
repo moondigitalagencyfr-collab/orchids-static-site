@@ -225,6 +225,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Mobile App Menu - Set active state
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.mobile-app-menu-item').forEach(item => {
+    const href = item.getAttribute('href');
+    if (href === currentPage) {
+      item.classList.add('active');
+    }
+  });
+
   // Spotlight Effect for Glass Cards
   const spotlightCards = document.querySelectorAll('.glass-card');
   
